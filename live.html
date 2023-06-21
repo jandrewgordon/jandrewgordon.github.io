@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Love Field - Shows</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Live</h1>
+    <h2 onclick="toggleVisible('liveShows')">Live</h2>
+    <div id="liveShows">
+        <table>
+            <th>Next Show</th>
+            <tbody>
+                <tr>
+                    <td>02/07/23</td>
+                    <td>The Hug and Pint</td>
+                    <td>Glasgow</td>
+                    <td><a href="http://google.com">Tickets</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <th>Upcoming Shows</th>
+            <tbody>
+                <tr>
+                    <td>02/07/23</td>
+                    <td>The Hug and Pint</td>
+                    <td>Glasgow</td>
+                    <td>http://place.net</td>
+                </tr>
+                <tr>
+                    <td>03/08/23</td>
+                    <td>Bungalow</td>
+                    <td>Paisley</td>
+                    <td>http://place.net</td>
+                </tr>
+                <tr>
+                    <td>03/08/23</td>
+                    <td>Stereo</td>
+                    <td>Glasgow</td>
+                    <td>http://place.net</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <h2>Contact</h2>  
+    
+    <div id="links">
+        <a>Email</a>
+        <a>Instagram</a>
+        <a>Soundcloud</a> 
+    </div>     
+    <p>Dream pop band based in Glasgow</p>
+
+    <script>
+        function toggleVisible(element) {
+            var x = document.getElementById("liveShows");
+            if (x.style.display === "none") {
+                    x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+   
+</body>
+</html>
