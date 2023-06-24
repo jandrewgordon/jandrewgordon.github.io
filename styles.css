@@ -9,6 +9,7 @@ h1 {
     font-size: 1.5em;
     margin-top: 1em;
     margin-left: 0.7em;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -17,28 +18,55 @@ h1 {
       margin-left: 0;
     }
     .imageContainer img {
-        width: 93%;
+        border: 0.3em solid black;
+        width: 98.3%;
     }
+    table {
+        width: 100%;
+    }
+    
 }
 
 @media (min-width: 769px) {
     .imageContainer img {
+        border: 0.3em solid black;
         max-width: 25%;
+    }
+    .tableContainer {
+        width: fit-content;
     }
 }
 
 h2 {
-    font-family: "Barlow";
-    cursor:pointer;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+.tableHeader {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.158em;
+    font-size: 1.03em;
+    margin: 0;
+}
+
+.previousShow {
+    padding-top: 0.1em;
+    padding-left: 0.16em;
+}
+
+.subHeadContainer {
     background-color: black;
+    width: fit-content;
 }
 
-h2:hover {
+/* h2:hover {
     color: darkgrey;
-}
+} */
 
-#share {
+#myBtn {
     width: 15px;
+    cursor: pointer;
 }
 
 .mainContainer {
@@ -53,13 +81,13 @@ h2:hover {
     flex-wrap: wrap;
 } 
 
-table {
+.tableContainer {
     background-color: black;
-    margin-left: 1em;
 }
 
 .contentContainer {
     margin-left: 1em;
+    margin-right: 1em;
 }
 
 .bigHeader {
@@ -70,15 +98,73 @@ a {
     color: lightgrey;
 }
 
-.imageContainer {
-    margin-left: 1em;
+.textContainer {
+    background-color: black;
+    width: fit-content;
+    padding-left: 0.16em;
+    padding-right: 0.16em;
 }
 
-
-.imageContainer img {
-    border: 0.3em solid black;
+p {
+    padding-bottom: 0.2em;
+    margin:0;
 }
 
+.socials {
+    text-decoration: none;
+}
+
+.logoHeader {
+    text-decoration: none;
+}
+
+input {
+    cursor: pointer;
+}
+
+#copyLink {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
 

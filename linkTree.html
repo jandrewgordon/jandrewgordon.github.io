@@ -11,50 +11,106 @@
 </head>
 <body>
     <div class="header-container">
-        <h1>Dallas Love Field</h1>
+        <h1><a class="logoHeader" href="index.html">Dallas Love Field</a></h1>
     </div>
 
     <div class="mainContainer">
 
-        <br/>
+        <div class="contentContainer"> 
 
-        <div class="tableContainer">
-            <table>
-                <th class="bigHeader">Endless Summer</th>
-            </table>
-        </div>
+            <br/>
 
-        <br/>
-        <div class="imageContainer">
-            <img src="WildCabin.jpg"/>
-        </div> 
+            <div class="subHeadContainer">
+                <h2>Endless Summer</h2>
+            </div> 
 
-        <br/>
-        <div class="tableContainer">
-            <table>
-                <th>w/ Wild Cabin</th>
-                <tbody id="nextShowTable">
-                    <tr>
-                        <td>02/07/23</td>
-                        <td>The Hug and Pint</td>
-                        <td>Glasgow</td>
-                        <td>
-                            <form action="https://432p.seetickets.com/event/wild-cabin-dallas-love-field-cats-cradle/the-hug-and-pint/2665521">
-                                <input type="submit" value="Tickets"/>
-                            </form>
-                        </td>
-                        <td><img id="share" src="share.png"></img></td>
-                    </tr>
-                    <tr>
-                        <td><a>See more ></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div class="imageContainer">
+                <a href="https://432p.seetickets.com/event/wild-cabin-dallas-love-field-cats-cradle/the-hug-and-pint/2665521"><img src="WildCabin.jpg"/></a>
+            </div> 
+
+            <br/>
+            <div class="tableContainer">
+                <table>
+                    <th>w/ Wild Cabin</th>
+                    <tbody id="nextShowTable">
+                        <tr>
+                            <td>02/07/23</td>
+                            <td>The Hug and Pint</td>
+                            <td>Glasgow</td>
+                            <td>
+                                <form action="https://432p.seetickets.com/event/wild-cabin-dallas-love-field-cats-cradle/the-hug-and-pint/2665521">
+                                    <input type="submit" value="Tickets"/>
+                                </form>
+                            </td>
+                            <td><img id="myBtn" src="share.png"></img></td>
+                        </tr>
+                        <tr>
+                            <td><a href="index.html">Other shows ></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         
-
+        </div>         
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Share:</p>
+            <br/>
+            <br/>
+            <p><a href="https://wa.me/?text=Dallas Love Field at Hug and Pint: https://jandrewgordon.github.io/linkTree.html">via Whatsapp</a></p>
+            <br/>
+            <p><a href="https://twitter.com/intent/tweet?text=Dallas Love Field at Hug and Pint: https://jandrewgordon.github.io/linkTree.html">via Twitter</a></p>
+            <br/>
+            <p id="copyLink" onclick="copyToClipboard()">Copy Link</p>
+        </div>
+    
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        function copyToClipboard() {
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText("https://jandrewgordon.github.io/linkTree.html");
+
+            // Alert the copied text
+            alert("Copied!");
+        } 
+
+
+    </script>    
        
     
       
